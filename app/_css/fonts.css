@@ -7,9 +7,20 @@ footer * {
 
 html {
     font-style: normal;
-    font-size: 16px;
     color: var(--black);
     line-height: 1.6;
+}
+
+@media only screen and not (max-width: 1279px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 /* - - - - - - - - - */
@@ -73,15 +84,15 @@ a.cool:hover:active {
 }
 
 .h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .italics {
@@ -112,21 +123,22 @@ a.cool:hover:active {
 th,
 a,
 button,
+.button,
 nav *,
 #hbmenu * {
     font-family: var(--font-jersey_15), var(--font-dotgothic16), sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1;
 }
 
 .jersey15.h1 {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .jersey15.h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .jersey15.h3 {
-    font-size: 32px;
+    font-size: 2rem;
 }

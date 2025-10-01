@@ -9,14 +9,15 @@
     justify-content: center;
     align-items: center;
     margin: 8px;
-    padding: 0 16px;
+    padding: 4px 16px;
+    font-size: 1.75rem;
     text-align: center;
     text-wrap: wrap;
 }
 
 @media only screen and not (max-width: 1279px) {
     #worldstories a {
-        width: 224px;
+        width: 256px;
         height: 96px;
     }
 }

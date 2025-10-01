@@ -35,7 +35,7 @@ export default async function NewsArticle({ params }) {
                 <div className="row">
                     <div className="column-100">
                         <div>
-                            <span className={data.category} id="nacategory" />
+                            <span className={`jersey15 ${data.category}`} id="nacategory" />
                             <span className="jersey15 h2" id="natitle">{data.title}</span>
                         </div>
                         <HRBreak width="100%" pTop="8px" />

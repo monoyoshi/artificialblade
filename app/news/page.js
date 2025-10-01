@@ -31,7 +31,7 @@ function readFiles(filesList = []) {
             const data = JSON.parse(fs.readFileSync(filePath));
 
             const newsEntry = {
-                "id": filePath.slice(-19, -5).replace(/[_\\]/g, ""),
+                "id": filePath.slice(-19).split(".")[0].replace(/[_/\\]/g, ""),
                 "category": data.category,
                 "title": data.title,
                 "timestamp": data.timestamp,

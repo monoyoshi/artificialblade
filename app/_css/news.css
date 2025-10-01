@@ -25,7 +25,6 @@
 .newscat > button {
     margin: 8px;
     padding: 4px 16px;
-    font-size: 24px;
 }
 
 @media only screen and not (max-width: 1279px) {
@@ -129,13 +128,12 @@
 /* ne = news entry */
 
 .newsentry {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .necategory {
     display: flex;
     align-items: center;
-    height: 32px;
     padding-left: 8px;
     background-color: var(--a_b0g5);
     color: var(--white);
@@ -167,7 +165,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 96px;
     padding: 8px;
     overflow: scroll;
     white-space: normal;
@@ -178,7 +175,6 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 96px;
     padding: 8px;
 }
 
@@ -188,6 +184,14 @@
 }
 
 @media only screen and not (max-width: 1279px) {
+    .nemlhs, .nerhs {
+        height: 96px;
+    }
+
+    .necategory {
+        height: 32px;
+    }
+
     .necategory.schedule {
         background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dyellow) 256px, var(--n_yellow) 256px, var(--n_yellow) 100%);
     }
@@ -202,6 +206,14 @@
 }
 
 @media only screen and (max-width: 1279px) {
+    .nemlhs, .nerhs {
+        height: 72px;
+    }
+
+    .necategory {
+        height: 24px;
+    }
+
     .necategory.schedule {
         background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dyellow) calc(100% - 96px), var(--n_yellow) calc(100% - 96px), var(--n_yellow) 100%);
     }
@@ -222,7 +234,6 @@
 .newsnav {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .newsnav > button {
@@ -241,7 +252,16 @@
 
 @media only screen and not (max-width: 1279px) {
     .newsnav {
+        width: 30vw;
         min-width: 512px;
+        max-width: 768px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .newsnav {
+        width: 100%;
+        max-width: 512px;
     }
 }
 
@@ -253,10 +273,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 256px;
     height: 40px;
     margin: 0 16px 8px 0;
-    padding-left: 32px;
     background-color: var(--a_b0g5);
     color: var(--white);
     font-weight: bold;
@@ -270,7 +288,7 @@
 }
 
 #nacategory.schedule {
-    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dred) 32px, var(--n_red) 32px, var(--n_red) 100%);
+    background: var(--n_yellow);
 }
 
 #nacategory.schedule::before {
@@ -278,7 +296,7 @@
 }
 
 #nacategory.bug {
-    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dyellow) 32px, var(--n_yellow) 32px, var(--n_yellow) 100%);
+    background: var(--n_red);
 }
 
 #nacategory.bug::before {
@@ -286,7 +304,7 @@
 }
 
 #nacategory.version {
-    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dblue) 32px, var(--n_blue) 32px, var(--n_blue) 100%);
+    background: var(--n_blue);
 }
 
 #nacategory.version::before {
@@ -294,6 +312,10 @@
 }
 
 @media only screen and not (max-width: 1279px) {
+    #nacategory {
+        width: 256px;
+    }
+
     #natitle {
         position: relative;
         top: 6px;
@@ -304,6 +326,7 @@
     #nacategory {
         position: relative;
         bottom: 4px;
+        width: 192px;
     }
 }
 
