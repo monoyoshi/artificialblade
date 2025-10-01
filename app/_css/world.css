@@ -1,0 +1,29 @@
+#worldstories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#worldstories a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding: 0 16px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media only screen and not (max-width: 1279px) {
+    #worldstories a {
+        width: 224px;
+        height: 96px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    #worldstories a {
+        width: 512px;
+        height: 48px;
+    }
+}

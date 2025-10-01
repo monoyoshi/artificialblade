@@ -1,0 +1,320 @@
+/* news section */
+
+:root {
+    --n_red: #bd242d;
+        --n_dred: #5a121b;
+    --n_yellow: #e1bd24;
+        --n_dyellow: #5a5112;
+    --n_green: #75ab24;
+        --n_dgreen: #75ab24;
+    --n_blue: #485aab;
+        --n_dblue: #2d3663;
+    --n_purple: #634887;
+        --n_dpurple: #634887;
+}
+
+/* news category menu */
+
+.newscat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.newscat > button {
+    margin: 8px;
+    padding: 4px 16px;
+    font-size: 24px;
+}
+
+@media only screen and not (max-width: 1279px) {
+    .newscat {
+        padding-right: 128px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .newscat {
+        justify-content: center;
+        max-width: 512px;
+        margin-bottom: 16px;
+    }
+
+    .newscat > button {
+        margin: 4px;
+        padding: 4px 8px;
+    }
+}
+
+/* --------- */
+
+/* news container */
+
+#news {
+    display: flex;
+}
+
+#news .nrhs {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsbox {
+    padding: 0 16px;
+    background-color: var(--lgray);
+    border: 4px solid var(--black);
+    border-radius: 8px;
+    overflow: scroll;
+}
+
+.newsbox > a {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    background-color: var(--white);
+    text-wrap: nowrap;
+    text-decoration: none;
+    border: 4px solid var(--black);
+    border-radius: 8px;
+    box-shadow: 0 4px 0 var(--black);
+    user-select: none;
+    transition-duration: 300ms;
+}
+
+.newsbox a:hover:active {
+    color: inherit;
+    box-shadow: none;
+    transform: translateY(4px);
+    transition-duration: 10ms;
+}
+
+@media only screen and not (max-width: 1279px) {
+    #news {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #news .nrhs {
+        align-items: flex-end;
+    }
+
+    .newsbox {
+        width: 30vw;
+        min-width: 512px;
+        max-width: 768px;
+        height: 596px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    #news {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #news .nrhs {
+        align-items: center;
+    }
+
+    .newsbox {
+        width: 100%;
+        max-width: 512px;
+        height: calc(60vh);
+    }
+}
+
+/* --------- */
+
+/* ne = news entry */
+
+.newsentry {
+    font-size: 16px;
+}
+
+.necategory {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 8px;
+    background-color: var(--a_b0g5);
+    color: var(--white);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 4px solid black;
+}
+
+.necategory::before {
+    content: "Other";
+}
+
+.necategory.schedule::before {
+    content: "Events/Schedules";
+}
+
+.necategory.bug::before {
+    content: "Tech Issues";
+}
+
+.necategory.version::before {
+    content: "Version Updates";
+}
+
+.nemain {
+    display: flex;
+}
+
+.nemlhs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 96px;
+    padding: 8px;
+    overflow: scroll;
+    white-space: normal;
+}
+
+.nemrhs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 96px;
+    padding: 8px;
+}
+
+.nemrhs > img {
+    max-width: 128px;
+    max-height: 64px;
+}
+
+@media only screen and not (max-width: 1279px) {
+    .necategory.schedule {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dyellow) 256px, var(--n_yellow) 256px, var(--n_yellow) 100%);
+    }
+
+    .necategory.bug {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dred) 256px, var(--n_red) 256px, var(--n_red) 100%);
+    }
+
+    .necategory.version {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dblue) 256px, var(--n_blue) 256px, var(--n_blue) 100%);
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .necategory.schedule {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dyellow) calc(100% - 96px), var(--n_yellow) calc(100% - 96px), var(--n_yellow) 100%);
+    }
+
+    .necategory.bug {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dred) calc(100% - 96px), var(--n_red) calc(100% - 96px), var(--n_red) 100%);
+    }
+
+    .necategory.version {
+        background: linear-gradient(135deg, var(--dddgray) 0%, var(--n_dblue) calc(100% - 96px), var(--n_blue) calc(100% - 96px), var(--n_blue) 100%);
+    }
+}
+
+/* --------- */
+
+/* news container navigation */
+
+.newsnav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.newsnav > button {
+    width: 50%;
+    max-width: 128px;
+    margin: 16px 8px 0;
+}
+
+.newsnav > button.l::before {
+    content: "<";
+}
+
+.newsnav > button.r::before {
+    content: ">";
+}
+
+@media only screen and not (max-width: 1279px) {
+    .newsnav {
+        min-width: 512px;
+    }
+}
+
+/* --------- */
+
+/* news page category */
+
+#nacategory {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 40px;
+    margin: 0 16px 8px 0;
+    padding-left: 32px;
+    background-color: var(--a_b0g5);
+    color: var(--white);
+    font-weight: bold;
+    border: 4px solid var(--black);
+    border-radius: 8px;
+    user-select: none;
+}
+
+#nacategory::before {
+    content: "Other";
+}
+
+#nacategory.schedule {
+    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dred) 32px, var(--n_red) 32px, var(--n_red) 100%);
+}
+
+#nacategory.schedule::before {
+    content: "Events/Schedules";
+}
+
+#nacategory.bug {
+    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dyellow) 32px, var(--n_yellow) 32px, var(--n_yellow) 100%);
+}
+
+#nacategory.bug::before {
+    content: "Tech Issues";
+}
+
+#nacategory.version {
+    background: linear-gradient(to right, var(--dddgray) 0%, var(--n_dblue) 32px, var(--n_blue) 32px, var(--n_blue) 100%);
+}
+
+#nacategory.version::before {
+    content: "Version Updates";
+}
+
+@media only screen and not (max-width: 1279px) {
+    #natitle {
+        position: relative;
+        top: 6px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    #nacategory {
+        position: relative;
+        bottom: 4px;
+    }
+}
+
+#natimestamp {
+    margin-bottom: 32px;
+}
+
+/* --------- */
+
+/* news page special components */
+
+.npindent {
+    margin-left: 32px;
+}

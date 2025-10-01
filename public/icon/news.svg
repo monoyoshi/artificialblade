@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="news.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="8"
+     inkscape:cx="-6.375"
+     inkscape:cy="14.3125"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1-1-2"
+       style="display:inline;fill:#7e7e87;fill-opacity:1;stroke-width:0.661455;stroke-linecap:round"
+       d="M 3,0 V 1 H 2 V 2 H 1 v 20 h 1 v 1 h 1 v 1 h 7 v 1 h 1 v 6 h 1 v 1 h 3 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 8 v -1 h 1 v -1 h 1 V 2 H 31 V 1 H 30 V 0 Z m 2,3 h 23 v 1 h 1 v 16 h -1 v 1 h -7 v 1 h -2 v 1 h -1 v 1 h -1 v 1 h -1 v 1 h -1 v 1 H 14 V 23 H 13 V 22 H 12 V 21 H 5 V 20 H 4 V 4 h 1 z m 10,2 v 9 h 3 V 5 Z m 0,11 v 3 h 3 v -3 z"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       style="fill:#f3f3fc;fill-opacity:1;stroke-width:2.5;stroke-linecap:round"
+       d="m 12,30 9,-8 h 8 V 2 H 2.1 L 2,22 h 9 z"
+       id="path3"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       id="rect1-1"
+       style="display:inline;fill:#000009;fill-opacity:1;stroke-width:0.661455;stroke-linecap:round"
+       d="M 2,0 V 1 H 1 V 2 H 0 v 20 h 1 v 1 h 1 v 1 h 7 v 1 h 1 v 6 h 1 v 1 h 3 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 1 v -1 h 8 v -1 h 1 v -1 h 1 V 2 H 30 V 1 H 29 V 0 Z m 2,3 h 23 v 1 h 1 v 16 h -1 v 1 h -7 v 1 h -2 v 1 h -1 v 1 h -1 v 1 h -1 v 1 h -1 v 1 H 13 V 23 H 12 V 22 H 11 V 21 H 4 V 20 H 3 V 4 h 1 z m 10,2 v 9 h 3 V 5 Z m 0,11 v 3 h 3 v -3 z" />
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+*,
+.rocknrollone,
+.rocknrollone *,
+footer * {
+    font-family: var(--font-rocknroll_one), sans-serif;
+}
+
+html {
+    font-style: normal;
+    font-size: 16px;
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* - - - - - - - - - */
+
+/* links */
+
+a {
+    color: var(--black);
+    text-decoration: underline dotted;
+}
+
+a.camo,
+a.cool {
+    text-decoration: none;
+}
+
+a:hover:active {
+    color: var(--a_yellow);
+}
+
+a.cool {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(var(--white)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    color: var(--white);
+    text-decoration: none;
+    user-select: none;
+    transition: background-position 0ms 250ms, background-size 250ms;
+}
+    
+a.cool:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+
+a.cool:hover:active {
+    background: linear-gradient(var(--a_yellow)) 0 2px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+::selection {
+    background-color: var(--a_b5g0);
+    color: var(--white);
+}
+
+/* - - - - - - - - - */
+
+/* custom formatting */
+
+.h1,
+.h2,
+.h3,
+.bold {
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 32px;
+}
+
+.h2 {
+    font-size: 24px;
+}
+
+.h3 {
+    font-size: 18px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.textleft,
+.textleft * {
+    text-align: left;
+}
+
+.textcenter,
+.textcenter * {
+    text-align: center;
+}
+
+.textright,
+.textright * {
+    text-align: right;
+}
+
+/* - - - - - - - - - */
+
+/* jersey 15 */
+
+.jersey15,
+.jersey15 *,
+th,
+a,
+button,
+nav *,
+#hbmenu * {
+    font-family: var(--font-jersey_15), var(--font-dotgothic16), sans-serif;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.jersey15.h1 {
+    font-size: 48px;
+}
+
+.jersey15.h2 {
+    font-size: 40px;
+}
+
+.jersey15.h3 {
+    font-size: 32px;
+}

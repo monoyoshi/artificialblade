@@ -1,0 +1,42 @@
+[class*="charactercolumn"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#characterbios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#characterbios a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 8px;
+    padding: 0 16px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media only screen and not (max-width: 1279px) {
+    .charactercolumn-lhs {
+        padding-right: 8px;
+    }
+
+    .charactercolumn-rhs {
+        padding-left: 8px;
+    }
+
+    #characterbios a {
+        width: 256px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    #characterbios a {
+        width: 512px;
+    }
+}
